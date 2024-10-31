@@ -69,14 +69,14 @@
             </ul>
             <ul class="jobs">
                 <li class="job">
-                    <img src="./" alt="회사로고">
+                    <img class="job__img" src="./images/job.jpg" alt="회사로고">
                     <div>
                         <p class="job__name">다닌 회사명</p>
                         <p class="job_period">20xx~20xx</p>
                     </div>
                 </li>
                 <li class="job">
-                    <img src="./" alt="회사로고">
+                    <img class="job__img" src="./images/job.jpg" alt="회사로고">
                     <div>
                         <p class="job__name">다닌 회사명</p>
                         <p class="job_period">20xx~20xx</p>
@@ -135,7 +135,7 @@
 
                     <section class="skills__tools">
                         <h3 class="skills__title">도구</h3>
-                        <ul class="skills__etc">
+                        <ul>
                             <li>Visual Studio Code</li>
                             <li>Pycharm</li>
                             <li>Jupyter notebook</li>
@@ -144,9 +144,9 @@
                         </ul>
                     </section>
 
-                    <section class="skills__tools">
+                    <section class="skills__etc">
                         <h3 class="skills__title">기타</h3>
-                        <ul class="skills__etc">
+                        <ul>
                             <li>Git</li>
                             <li>Math</li>
                         </ul>
@@ -160,19 +160,94 @@
             <div class="max-container">
             <h2 class="title">포트폴리오</h2>
             <p class="description">Projects</p>
-            <ul>
-                <li><button>ALL <span>10</span></button></li>
-                <li><button>Front-end <span>3</span></button></li>
-                <li><button>Mobile <span>5</span></button></li>
-                <li><button>Back-end <span>2</span></button></li>
-            </ul>
-            <ul>
+            <ul class="categories">
                 <li>
+                    <button class="category category--selected">ALL <span class="category__count">10</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category">Front-end <span class="category__count">3</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category">Mobile <span class="category__count">5</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category">Back-end <span class="category__count">2</span>
+                    </button>
+                </li>
+            </ul>
+            <ul class="projects">
+                <li class="project">
                     <a href="#" target="_blank">
-                        <img src="./images/portfolio.png" alt="project1">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>클론코딩 사이트</p>
+                        <img src="./images/portfolio.jpg" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>프로젝트 설명</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="#" target="_blank">
+                        <img src="./images/portfolio.jpg" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>프로젝트 설명</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="#" target="_blank">
+                        <img src="./images/portfolio.jpg" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>프로젝트 설명</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="#" target="_blank">
+                        <img src="./images/portfolio.jpg" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>프로젝트 설명</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="#" target="_blank">
+                        <img src="./images/portfolio.jpg" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>프로젝트 설명</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="#" target="_blank">
+                        <img src="./images/portfolio.jpg" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>프로젝트 설명</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="#" target="_blank">
+                        <img src="./images/portfolio.jpg" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>프로젝트 설명</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="#" target="_blank">
+                        <img src="./images/portfolio.jpg" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>프로젝트 설명</p>
                         </div>
                     </a>
                 </li>
@@ -185,21 +260,39 @@
             <div class="max-container">
             <h2 class="title">자격증</h2>
             <p class="description">국가 기술 자격증</p>
-            <ul>
-                <li>
-                    <img src="./images/license.jpg" alt="정보처리기사">
-                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem quam nemo quia modi ipsam quo, illo sapiente dolorem ad inventore reprehenderit minus debitis dignissimos maiores sit atque alias ducimus.
-                    </p>
-                    <p><a href="#">산업인력공단</a></p>
+            <ul class="licenses">
+                <li class="license">
+                    <img class="license__img" src="./images/license.jpg" alt="정보처리기사">
+                    <div class="license__bubble">
+                        <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem quam nemo quia modi ipsam quo, illo sapiente dolorem ad inventore reprehenderit minus debitis dignissimos maiores sit atque alias ducimus.
+                        </p>
                     </div>
                 </li>
+                <li class="license">
+                    <img class="license__img" src="./images/license.jpg" alt="정보처리기사">
+                    <div class="license__bubble">
+                        <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem quam nemo quia modi ipsam quo, illo sapiente dolorem ad inventore reprehenderit minus debitis dignissimos maiores sit atque alias ducimus.
+                        </p>
+                    </div>
+                </li>
+                <li class="license">
+                    <img class="license__img" src="./images/license.jpg" alt="정보처리기사">
+                    <div class="license__bubble">
+                        <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem quam nemo quia modi ipsam quo, illo sapiente dolorem ad inventore reprehenderit minus debitis dignissimos maiores sit atque alias ducimus.
+                        </p>
+                    </div>
+                </li>
+                
             </ul>
             </div>
         </section>
     
         <!-- Arrow up -->
         <aside>
-            <a href="#home" title="위로">
+            <a class="arrow-rp" href="#home" title="위로">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </aside>
@@ -208,9 +301,9 @@
         <footer id="contact" class="section">
             <h2 class="title">연락주세요!</h2>
             <p class="description">choin0330@gmail.com</p>
-            <ul>
-                <li><a href="https://github.com/cccd3" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://github.com/cccd3" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
+            <ul class="contact__links">
+                <li><a class="contact__link" href="https://github.com/cccd3" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
+                <li><a class="contact__link" href="https://github.com/cccd3" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
             </ul>
             <p>ⓒ Choin - All rights reserved</p>
         </footer>
